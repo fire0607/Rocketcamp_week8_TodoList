@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TODO LIST</title>
     <link rel="stylesheet" href="./scss/all.css">
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </head>
 <body>
+    <header class="center header">
+        <h1><a href="./index.html"><img src="./img/logo.svg" alt="TODO LIST"></a></h1>
+        <nav>
+            <p class="user">王小明的待辦</p>
+            <a href="#" class="logout">登出</a>
+        </nav>
+    </header>
+    <section>
+        <div class="todo">
+            <input type="text" class="todo-text" placeholder="新增待辦事項">
+            <input type="button" class="todo-plus" value="">
+        </div>
+        <div class="todo-noting">
+            <p>目前尚無待辦事項</p>
+            <img src="./img/empty.png" alt="目前尚無待辦事項"  width="100px">
+        </div>
+    </section>
     <script src="./all.js"></script>
 </body>
 </html>

@@ -1,5 +1,37 @@
 *,*::before,*::after{
     box-sizing: border-box;
-    font-size: 10px;
     margin: 0 auto;
+}
+
+body{
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 10px;
+    max-width: 1028px;
+    height: 100%;
+    margin: 0 auto;
+    background: linear-gradient(172.7deg, $yellow 5.12%, $yellow 53.33%, $yellow 53.44%, #FFFFFF 53.45%, #FFFFFF 94.32%);
+    
+}
+
+.header{
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.6em;
+    nav{
+        font-size: 1.6em;
+        p{
+            font-weight: 700;
+            display: inline-block;
+            padding-right: 1.5em;
+        }
+        a{
+            font-size: 1rem;
+            text-decoration: none;
+            color: $black;
+            &:hover{
+                transition: 0.2s;
+                font-weight: 700;
+            }
+        }
+    }
 }
