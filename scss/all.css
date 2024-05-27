@@ -68,7 +68,7 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 10px;
   max-width: 1028px;
-  height: 100%;
+  height: 100vh;
   margin: 0 auto;
   background: linear-gradient(172.7deg, #FFD370 5.12%, #FFD370 53.33%, #FFD370 53.44%, #FFFFFF 53.45%, #FFFFFF 94.32%);
 }
@@ -94,4 +94,58 @@ body {
 .header nav a:hover {
   transition: 0.2s;
   font-weight: 700;
+}
+@media (max-width: 375px) {
+  .header {
+    justify-content: space-evenly;
+  }
+  .header nav p {
+    display: none;
+  }
+}
+
+.main {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 375px) {
+  .main {
+    width: 100%;
+    padding: 0 1.6em;
+  }
+}
+
+.todo {
+  font-size: 1.6em;
+  position: relative;
+}
+.todo .todo-text {
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  padding: 1.2em;
+  border-radius: 0.8em;
+}
+.todo .todo-submit {
+  position: absolute;
+  right: 0.5em;
+  top: 0.3em;
+}
+@media (max-width: 375px) {
+  .todo {
+    margin: 0 auto;
+  }
+}
+
+.todo-nothing {
+  text-align: center;
+}
+.todo-nothing p {
+  font-size: 1.6em;
+  padding-top: 4em;
+  padding-bottom: 1em;
+}
+.todo-nothing img {
+  width: 25em;
 }/*# sourceMappingURL=all.css.map */

@@ -7,7 +7,7 @@ body{
     font-family: "Noto Sans TC", sans-serif;
     font-size: 10px;
     max-width: 1028px;
-    height: 100%;
+    height: 100vh;
     margin: 0 auto;
     background: linear-gradient(172.7deg, $yellow 5.12%, $yellow 53.33%, $yellow 53.44%, #FFFFFF 53.45%, #FFFFFF 94.32%);
     
@@ -33,5 +33,56 @@ body{
                 font-weight: 700;
             }
         }
+    }
+    @include mobile{
+        justify-content: space-evenly;
+        nav{
+            p{
+                display: none;
+            }
+        }
+    }
+
+}
+
+.main{
+    width: 50%;
+    margin: 0 auto;
+    @include mobile{
+            width: 100%;
+            padding: 0 1.6em;
+    }
+}
+
+.todo{
+    font-size: 1.6em;
+    position: relative;
+    .todo-text{
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        padding: 1.2em;
+        border-radius: 0.8em;
+    }
+    .todo-submit{
+        position: absolute;
+        right: 0.5em;
+        top: 0.3em;
+    }
+    @include mobile{
+        margin: 0 auto;
+    }
+}
+
+.todo-nothing{
+    text-align: center;
+    p{
+        font-size: 1.6em;
+        padding-top: 4em;
+        padding-bottom: 1em;
+    }
+    img{
+        width: 25em;
     }
 }
