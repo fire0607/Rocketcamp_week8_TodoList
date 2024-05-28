@@ -207,34 +207,44 @@ body {
   }
 }
 
-.login-form h2 {
+.login-form h2, .register-form h2 {
   font-size: 2.4em;
   font-weight: 700;
   padding-bottom: 1.5em;
 }
 @media (max-width: 375px) {
-  .login-form h2 {
+  .login-form h2, .register-form h2 {
     text-align: center;
     font-size: 2em;
   }
 }
 @media (max-width: 375px) {
-  .login-form {
+  .login-form, .register-form {
     width: 80%;
   }
 }
 
-.login-info {
+.register-form h2 {
+  padding-right: 8em;
+}
+@media (max-width: 375px) {
+  .register-form h2 {
+    padding: 0 0 0.8em 0;
+    text-align: center;
+  }
+}
+
+.login-info, .register-info {
   font-size: 1.4em;
   font-weight: 700;
 }
-.login-info li {
+.login-info li, .register-info li {
   padding-bottom: 2em;
 }
-.login-info p {
+.login-info p, .register-info p {
   padding-bottom: 0.5em;
 }
-.login-info input {
+.login-info input, .register-info input {
   width: 100%;
   padding: 1em;
   border-radius: 0.8em;
@@ -242,10 +252,14 @@ body {
   border: none;
 }
 
+.register-info input {
+  width: 100%;
+}
+
 .action-buttons {
   text-align: center;
 }
-.action-buttons .login-btn {
+.action-buttons .login-btn, .action-buttons .register-btn {
   font-size: 1em;
   font-weight: 700;
   width: 40%;
@@ -253,12 +267,16 @@ body {
   color: #fff;
   cursor: pointer;
 }
-.action-buttons .login-btn:hover {
+.action-buttons .login-btn:hover, .action-buttons .register-btn:hover {
   background-color: #222;
   font-weight: 900;
   transition: 0.2s;
 }
+.action-buttons .register-btn {
+  width: 50%;
+}
 .action-buttons a {
+  font-size: 1.1em;
   text-decoration: none;
   color: #333333;
 }

@@ -27,7 +27,7 @@
     }
 }
 
-.login-form{
+.login-form,.register-form{
     h2{
         font-size: 2.4em;
         font-weight: 700;
@@ -42,8 +42,18 @@
     }
 
 }
+.register-form{
+    h2{
+        padding-right: 8em;
+        @include mobile{
+            padding: 0 0 0.8em 0;
+            text-align: center;
+        }
+    }
 
-.login-info{
+}
+
+.login-info,.register-info{
     font-size: 1.4em;
     font-weight: 700;
     li{
@@ -61,9 +71,15 @@
     }
 }
 
+.register-info{
+    input{
+        width: 100%;
+    }
+}
+
 .action-buttons{
     text-align: center;
-    .login-btn{
+    .login-btn,.register-btn{
         font-size: 1em;
         font-weight: 700;
         width: 40%;
@@ -76,7 +92,11 @@
             transition: 0.2s;
         }
     }
+    .register-btn{
+        width: 50%;
+    }
     a{
+        font-size: 1.1em;
         text-decoration: none;
         color: $black;
         &:hover{
