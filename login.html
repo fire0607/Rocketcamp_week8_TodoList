@@ -7,7 +7,31 @@
     <link rel="stylesheet" href="./scss/all.css">
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </head>
-<body>
+<body class="center login-page">
+    <header class="login-header">
+        <h1><img src="./img/logo.svg" alt="TODO LIST"></h1>
+        <img src="./img/main.png" alt="TODO LIST" class="main-img">
+    </header>
+    <section class="login-form">
+        <h2>最實用的線上代辦事項服務</h2>
+        <div class="login-info">
+            <ul>
+                <li class="form-field">
+                    <p>Email</p>
+                    <input type="email" name="email" id="email" placeholder="請輸入Email">
+                    <!-- <span class="error-message">此欄位不可為空</span> -->
+                </li>
+                <li class="form-field">
+                    <p>密碼</p>
+                    <input type="password" name="password" id="password" placeholder="請輸入密碼">
+                </li>
+            </ul>
+            <ul class="action-buttons">
+                <li><input type="button" value="登入" class="login-btn"></li>
+                <li><a href="#">註冊帳號</a></li>
+            </ul>
+        </div>
+    </section>
     <script src="./all.js"></script>
 </body>
 </html>

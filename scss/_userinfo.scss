@@ -1,0 +1,92 @@
+.login-page{
+    background: $yellow;
+    color: $black;
+    justify-content: space-evenly;
+    @include pad{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.login-header{
+    text-align: center;
+    h1{
+        padding-bottom: 1em;
+        @include mobile{
+            padding-bottom: 1.5em;
+        }
+    }
+    img{
+        width: 30em;
+    }
+    .main-img{
+        width: 38em;
+        @include pad{
+            display: none;
+        }
+    }
+}
+
+.login-form{
+    h2{
+        font-size: 2.4em;
+        font-weight: 700;
+        padding-bottom: 1.5em;
+        @include mobile{
+            text-align: center;
+            font-size: 2em;
+        }
+    }
+    @include mobile{
+        width: 80%;
+    }
+
+}
+
+.login-info{
+    font-size: 1.4em;
+    font-weight: 700;
+    li{
+        padding-bottom: 2em;
+    }
+    p{
+        padding-bottom: 0.5em;
+    }
+    input{
+        width: 100%;
+        padding: 1em;
+        border-radius: 0.8em;
+        outline: none;
+        border: none;
+    }
+}
+
+.action-buttons{
+    text-align: center;
+    .login-btn{
+        font-size: 1em;
+        font-weight: 700;
+        width: 40%;
+        background-color: $black;
+        color: #fff;
+        cursor: pointer;
+        &:hover{
+            background-color: #222;
+            font-weight: 900;
+            transition: 0.2s;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $black;
+        &:hover{
+            font-weight: 900;
+            transition: 0.2s;
+        }
+    }
+}
+
+.error-message{
+    color: $red;
+}
+
